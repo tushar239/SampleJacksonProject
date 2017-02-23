@@ -12,7 +12,7 @@ public class Event {
 
     private Date startDate;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss") // default timezone is GMT
     private Date endDate;
 
     public String getName() {
